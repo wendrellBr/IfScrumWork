@@ -54,6 +54,60 @@ The Retrospective is where continuous improvement happens. Teams discuss:
     tags: ["SCRUM", "Agile", "Project Management"],
     readingTime: "8 min read",
   },
+
+"guia-cerimonias-scrum":  {
+id: "1",  
+slug: "guia-cerimonias-scrum",  
+title: "O Guia Completo das Cerimônias SCRUM",  
+excerpt: "Aprenda a aproveitar ao máximo seu Planejamento de Sprint, Standups Diários e Retrospectivas.",  
+content: `  
+# O Guia Completo das Cerimônias SCRUM
+
+As cerimônias do Scrum são o coração de qualquer time SCRUM. Elas fornecem estrutura, promovem a colaboração e garantem que todos estejam alinhados com os objetivos do projeto.
+
+## Planejamento de Sprint
+
+O Planejamento de Sprint é onde tudo começa. Essa cerimônia define o tom para toda a sprint ao:
+
+- Definir os objetivos da sprint
+- Selecionar itens do backlog do produto
+- Dividir o trabalho em tarefas gerenciáveis
+
+## Standup Diário
+
+O Standup Diário, ou Daily SCRUM, é um evento de 15 minutos onde o time:
+
+1. Revê o que foi realizado ontem
+2. Planeja o que será feito hoje
+3. Identifica possíveis obstáculos
+
+## Revisão de Sprint
+
+Ao final de cada sprint, o time demonstra o trabalho realizado para os stakeholders e:
+
+- Apresenta as novas funcionalidades
+- Coleta feedbacks
+- Atualiza o backlog do produto
+
+## Retrospectiva de Sprint
+
+A Retrospectiva é o momento da melhoria contínua. O time discute:
+
+- O que deu certo
+- O que pode ser melhorado
+- Ações para a próxima sprint
+`,  
+publishedAt: "2024-12-04T10:00:00Z",  
+author: {  
+  id: "1",  
+  name: "Maria Silva",  
+  avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",  
+  bio: "Coach Ágil & SCRUM Master com mais de 10 anos de experiência",  
+},  
+featuredImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",  
+tags: ["SCRUM", "Ágil", "Gestão de Projetos"],  
+readingTime: "8 min de leitura",  
+}
 };
 
 export async function getBlogPost(slug: string): Promise<BlogPost> {
@@ -68,10 +122,10 @@ export async function getBlogPost(slug: string): Promise<BlogPost> {
   return post;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function getRelatedPosts(slug: string): Promise<RelatedPost[]> {
-  // Simulate API delay
-  await new Promise((resolve) => setTimeout(resolve, 800));
-  
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  // slug
   return [
     {
       id: "2",

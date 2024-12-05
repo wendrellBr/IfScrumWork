@@ -11,7 +11,7 @@ const featuredPosts = [
     image: "https://images.unsplash.com/photo-1580983559367-0dc2f8934365?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Guias",
     readTime: "7 min de leitura",
-    slug: "como-o-scrum-funciona",
+    slug: "guia-cerimonias-scrum",
   },
   // Adicione os outros artigos aqui
 ];
