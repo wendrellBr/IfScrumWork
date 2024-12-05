@@ -1,2 +1,0 @@
-# IfScrumWork
-Trabalho do if
