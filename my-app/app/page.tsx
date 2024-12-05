@@ -4,14 +4,14 @@ import { FeaturedPosts } from "@/components/home/FeaturedCards";
 import { Navbar } from "@/components/layout/Navbar";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <FeaturedPosts />
-        <NewsletterSection />
-      </main>
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<main>
+				<HeroSection />
+				<FeaturedPosts />
+				<NewsletterSection />
+			</main>
+		</>
+	);
 }
