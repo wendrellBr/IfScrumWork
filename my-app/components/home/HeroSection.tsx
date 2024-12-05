@@ -32,7 +32,7 @@ export function HeroSection() {
 					<div className="space-y-8">
 						<h1 className="text-4xl md:text-6xl font-bold tracking-tight">
 							Domine o desenvolvimento ágil com
-							<span className="text-primary text-emerald-500 font-bold">
+							<span className="text-blue-600 font-bold">
 								{" "}
 								SCRUM
 							</span>
