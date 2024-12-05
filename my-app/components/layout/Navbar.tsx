@@ -1,13 +1,19 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { Moon, Sun } from "lucide-react";
 
 export function Navbar() {
-	const navItems = [
-		{ label: "Home", href: "/" },
-		{ label: "Artigos", href: "#articles" },
-		{ label: "Contato", href: "#contact" },
-	];
+	const [isDarkMode, setIsDarkMode] = useState(false);
+
+	useEffect(() => {
+		if (isDarkMode) {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+	}, [isDarkMode]);
 
 	return (
 		<nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
@@ -18,15 +24,24 @@ export function Navbar() {
 					</Link>
 
 					<div className="hidden md:flex space-x-8">
-						{navItems.map((item) => (
-							<Link
-								key={item.href}
-								href={item.href}
-								className="text-muted-foreground hover:text-foreground transition-colors"
-							>
-								{item.label}
-							</Link>
-						))}
+						<Link
+							href="/"
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Home
+						</Link>
+						<Link
+							href="#articles"
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Artigos
+						</Link>
+						<Link
+							href="#contact"
+							className="text-muted-foreground hover:text-foreground transition-colors"
+						>
+							Contato
+						</Link>
 					</div>
 
 					<div className="hidden md:flex items-center space-x-4">
@@ -34,6 +49,16 @@ export function Navbar() {
 							Conectar
 						</Button>
 						<Button>Criar conta</Button>
+
+						<Button
+							variant="outline"
+							size="icon"
+							onClick={() => setIsDarkMode(!isDarkMode)}
+						>
+							<Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+							<Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+							<span className="sr-only">Toggle theme</span>
+						</Button>
 					</div>
 				</div>
 			</div>

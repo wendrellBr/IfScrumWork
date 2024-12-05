@@ -32,10 +32,7 @@ export function HeroSection() {
 					<div className="space-y-8">
 						<h1 className="text-4xl md:text-6xl font-bold tracking-tight">
 							Domine o desenvolvimento ágil com
-							<span className="text-blue-600 font-bold">
-								{" "}
-								SCRUM
-							</span>
+							<span className="text-blue-600 font-bold"> SCRUM</span>
 						</h1>
 						<p className="text-xl text-muted-foreground">
 							Scrum tem como foco resolver problemas complexos, promovendo uma

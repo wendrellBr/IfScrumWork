@@ -34,10 +34,8 @@ export function FeaturedPosts() {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{featuredPosts.map((post, index) => (
 							<Link
-								href={`/blog/${
-                  post.slug
-								}`}
-                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+								href={`/blog/${post.slug}`}
+								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								key={index}
 							>
 								<Card className="h-full hover:shadow-lg transition-shadow">
