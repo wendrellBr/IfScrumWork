@@ -25,9 +25,11 @@ export function HeroSection() {
     "https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/4078343/pexels-photo-4078343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-
+    
   ];
-
+  // colocar em ordem aleatória o array de imagens
+  images.sort(() => Math.random() - 0.5); 
+  
   return (
     <div className="relative pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,7 +37,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 Domine o desenvolvimento ágil com
-              <span className="text-primary text-blue-400 font-bold"> SCRUM</span>
+              <span className="text-primary text-emerald-500 font-bold"> SCRUM</span>
             </h1>
             <p className="text-xl text-muted-foreground">
             Scrum tem como foco resolver problemas complexos, promovendo uma comunicação eficiente e a colaboração constante entre todos os membros do time.
