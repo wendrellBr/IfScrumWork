@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```markdown
+# IFPR - Insights
 
-## Getting Started
+Este projeto é um trabalho da matéria de Engenharia de Software no curso de Análise e Desenvolvimento de Sistemas (ADS) do 2º ano do Instituto Federal do Paraná (IFPR).
 
-First, run the development server:
+## Descrição
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O projeto "IFPR - Insights" é um blog focado em metodologias ágeis, especialmente o Scrum. Ele oferece artigos, guias práticos e melhores práticas para dominar o desenvolvimento ágil. O objetivo é proporcionar um ambiente de aprendizado contínuo e compartilhamento de conhecimento sobre Scrum e outras metodologias ágeis.
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+.eslintrc.json
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+.gitignore
+.next/
+	...
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+package.json
+app/
+	blog/
+		...
+	components/
+		...
+	lib/
+		...
+	types/
+		...
+public/
+	...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+README.md
+tailwind.config.ts
+tsconfig.json
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tecnologias Utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js**: Framework React para desenvolvimento de aplicações web.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Tailwind CSS**: Framework CSS para estilização.
+- **Radix UI**: Componentes acessíveis e descomplicados para React.
+- **Lucide Icons**: Conjunto de ícones para React.
+
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/ifpr-insights.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd ifpr-insights
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Execute o projeto em modo de desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+5. Abra o navegador e acesse `http://localhost:3000`.
+
+## Estrutura de Diretórios
+
+- **app/**: Contém as páginas e componentes principais do projeto.
+- **components/**: Componentes reutilizáveis da interface do usuário.
+- **lib/**: Funções utilitárias e lógica de negócios.
+- **types/**: Definições de tipos TypeScript.
+- **public/**: Arquivos públicos, como imagens e ícones.
+
+## Autores
+
+- **Bryan Nykollas**
+- **Wendrell Possato**
+- **Maria Eduarda da Silva**
+  
+
+```
+
+Este README fornece uma visão geral do projeto, incluindo sua descrição, estrutura, tecnologias utilizadas, funcionalidades, instruções de execução, estrutura de diretórios, informações sobre contribuição, licença, autores e contato.
