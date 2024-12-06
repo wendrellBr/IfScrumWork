@@ -9,7 +9,7 @@ export interface BlogPost {
 	id: string;
 	slug: string;
 	title: string;
-	excerpt: string;
+	excerpt?: string;
 	content: string;
 	publishedAt: string;
 	author: Author;
@@ -22,7 +22,7 @@ export interface RelatedPost {
 	id: string;
 	slug: string;
 	title: string;
-	excerpt: string;
+	excerpt?: string;
 	featuredImage: string;
 	publishedAt: string;
 }

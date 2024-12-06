@@ -1,4 +1,4 @@
-import { RelatedPost } from "@/types/blog";
+import type { RelatedPost } from "@/types/blog";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,7 @@ interface RelatedPostsProps {
 export function RelatedPosts({ posts }: RelatedPostsProps) {
 	return (
 		<section className="not-prose">
-			<h2 className="text-2xl font-bold mb-6">Related Articles</h2>
+			<h2 className="text-2xl font-bold mb-6">Outros artigos</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 				{posts.map((post) => (
 					<Link key={post.id} href={`/blog/${post.slug}`}>
